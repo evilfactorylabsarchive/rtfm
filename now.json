@@ -1,0 +1,21 @@
+{
+  "name": "@evilfactory/rtfm",
+  "alias": "evilfactory-rtfm.now.sh",
+  "version": 2,
+  "builds": [
+    {
+      "src": "./build.sh",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "./site"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "^/assets/fonts/(.*)", "headers": {"cache-control": "public,max-age=31536000,immutable" } },
+    { "src": "^/assets/stylesheets/(.*)", "headers": {"cache-control": "public,max-age=31536000,immutable" } },
+    { "src": "^/assets/javascripts/(.*)", "headers": {"cache-control": "public,max-age=31536000,immutable" } },
+    { "src": "^/static/js/(.*)", "headers": {"cache-control": "public,max-age=31536000,immutable" } },
+    { "src": "^/img/illustration/(.*)", "headers": {"cache-control": "public,max-age=31536000,immutable" } }
+  ]
+}

@@ -1,0 +1,39 @@
+site_name: 'rtfm.id'
+site_description: 'Meng-gaya bebaskan dokumentasi'
+repo_name: 'evilfactorylabs/rtfm'
+repo_url: 'https://github.com/evilfactorylabs/rtfm'
+site_url: 'https://rtfm.evilfactory.id/'
+theme:
+  search_index_only: true
+  language: 'en'
+  logo:
+    icon: 'smoking_rooms'
+  feature:
+    tabs: true
+  palette:
+    primary: 'blue grey'
+    accent: 'blue'
+  name: null
+  custom_dir: 'theme/mkdocs-material-custom/material'
+  font:
+    text: 'Fira Sans'
+    code: 'Source Code Pro'
+extra_javascript:
+  - 'static/js/instantclick.min.js'
+extra:
+  disqus: 'rtfm-id'
+  prev_next: false
+  social:
+    - type: 'github'
+      link: 'https://github.com/evilfactorylabs'
+    - type: 'twitter'
+      link: 'https://twitter.com/evilfactorylabs'
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - meta
+  - pymdownx.superfences
