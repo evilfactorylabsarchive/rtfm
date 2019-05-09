@@ -1,6 +1,6 @@
 {
   "name": "@evilfactory/rtfm",
-  "alias": "evilfactory-rtfm.now.sh",
+  "alias": "rtfm.now.sh",
   "version": 2,
   "builds": [
     {

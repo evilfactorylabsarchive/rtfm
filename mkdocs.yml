@@ -1,8 +1,8 @@
-site_name: 'rtfm.id'
+site_name: 'rtfm'
 site_description: 'Meng-gaya bebaskan dokumentasi'
 repo_name: 'evilfactorylabs/rtfm'
 repo_url: 'https://github.com/evilfactorylabs/rtfm'
-site_url: 'https://rtfm.evilfactory.id/'
+site_url: 'https://rtfm.now.sh'
 theme:
   search_index_only: true
   language: 'en'
