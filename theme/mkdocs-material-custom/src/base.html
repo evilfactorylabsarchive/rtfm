@@ -388,6 +388,7 @@
         InstantClick.init()
 
         InstantClick.on('change', function() {
+          ga('send', 'pageview')
           {% set disqus = config.extra.disqus %}
           {% if disqus %}
             DISQUS.reset({
