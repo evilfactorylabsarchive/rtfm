@@ -29,7 +29,7 @@ extra:
     - type: 'twitter'
       link: 'https://twitter.com/evilfactorylabs'
 google_analytics:
-  - 'UA-XXXXXXXX-X'
+  - 'UA-139915600-1'
   - 'auto'
 markdown_extensions:
   - admonition
