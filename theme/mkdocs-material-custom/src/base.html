@@ -386,18 +386,16 @@
       {% endfor %}
       <script data-no-instant>
         InstantClick.init()
+        setupDisqus()
 
-        InstantClick.on('change', function() {
-          ga('send', 'pageview', location.pathname + location.search)
-          {% set disqus = config.extra.disqus %}
-          {% if disqus %}
+        {% set disqus = config.extra.disqus %}
+        {% if disqus %}
+          function setupDisqus () {
             if (typeof DISQUS === 'undefined') {
-              (function() {
-                var d = document, s = d.createElement("script")
-                s.src = "//{{ disqus }}.disqus.com/embed.js"
-                s.setAttribute("data-timestamp", +new Date())
-                (d.head || d.body).appendChild(s)
-              })()
+              var d = document, s = d.createElement("script");
+              s.src = "//{{ disqus }}.disqus.com/embed.js";
+              s.setAttribute("data-timestamp", +new Date());
+              (d.head || d.body).appendChild(s);
             } else {
               DISQUS.reset({
                 reload: true,
@@ -407,7 +405,13 @@
                 }
               })
             }
-          {% endif %}
+          }
+
+        {% endif %}
+
+        InstantClick.on('change', function() {
+          ga('send', 'pageview', location.pathname + location.search)
+          setupDisqus()
         })
       </script>
     {% endblock %}
