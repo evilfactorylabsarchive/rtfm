@@ -15,3 +15,6 @@ cd ../..
 
 # Build our docs
 pipenv run mkdocs build -f mkdocs.yml
+
+# Copy .well-known dir to our site after build
+mv ./.well-known site
