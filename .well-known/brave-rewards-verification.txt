@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: rtfm.now.sh
+Token: 477cea2d17b88217e3f3e49e4e1cb58bc01bd048c8a8fd3a5787c7ea284a4707
